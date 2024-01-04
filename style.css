@@ -2,6 +2,10 @@
 font-family: 'Montserrat', sans-serif; 
 */
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 1em;
@@ -44,6 +48,7 @@ li {
 
 header, footer {
     background-color: white;
+    padding: 20px 50px;
 }
 
 .cta {
@@ -60,8 +65,25 @@ header, footer {
 .definitionServices {
     border-bottom: 1px solid #8e86b5;
     border-right: 1px solid #8e86b5;
+    padding: 50px;
 }
 
 .icone:hover {
     opacity: 0.5;
+}
+
+section {
+    padding: 80px;
+}
+
+.main_a_propos {
+    margin: 0 auto;
+}
+
+.servicesTitle {
+    margin-top: 20px;
+}
+
+.competencesList {
+    margin-top: 20px;
 }
