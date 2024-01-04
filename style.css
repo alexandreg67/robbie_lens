@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 em {
     color: #A5B4FC;
     font-style: normal;
@@ -48,7 +52,16 @@ li {
     border-radius: 50px;
 }
 
+.cta:hover {
+    background: linear-gradient(#696484, #8788BA);
+    text-decoration: none;
+}
+
 .definitionServices {
     border-bottom: 1px solid #8e86b5;
     border-right: 1px solid #8e86b5;
+}
+
+.icone:hover {
+    opacity: 0.5;
 }
