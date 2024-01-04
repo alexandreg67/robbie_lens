@@ -36,11 +36,16 @@ li {
 
 header,
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
     padding: 20px 50px;
 }
 
 .cta {
+    display: inline-block;
     background: linear-gradient(#8e86b5, #acaeed);
     color: white;
     border-radius: 50px;
@@ -56,8 +61,13 @@ a:hover {
     text-decoration: none;
 }
 
+.lien-icone {
+    margin-left: 30px;
+}
+
 .lien-icone:hover {
     opacity: 0.5;
+    text-decoration: none;
 }
 
 .carre-contenu {
@@ -81,4 +91,19 @@ section {
 .a-propos-main {
     width: 50%;
     margin: auto;
+}
+
+.sectionAccueil {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: space-between;
+    margin: auto;
+    width: 50%;
+}
+
+.accueilGauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
