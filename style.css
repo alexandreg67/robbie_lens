@@ -36,16 +36,11 @@ li {
 
 header,
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     background-color: white;
     padding: 20px 50px;
 }
 
 .cta {
-    display: inline-block;
     background: linear-gradient(#8e86b5, #acaeed);
     color: white;
     border-radius: 50px;
@@ -67,7 +62,6 @@ a:hover {
 
 .lien-icone:hover {
     opacity: 0.5;
-    text-decoration: none;
 }
 
 .carre-contenu {
@@ -93,39 +87,58 @@ section {
     margin: auto;
 }
 
-.sectionAccueil {
+footer,
+nav {
     display: flex;
-    gap: 30px;
-    justify-content: center;
-    margin: auto;
-    width: 50%;
-}
-
-.accueilGauche {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
-.galeriePhotos {
-    background-color: white;
+nav a {
+    margin-left: 30px;
 }
 
-.galeriePhotos div {
+.accueil-photos {
+    background-color: white;
+    padding: 80px;
+}
+
+.accueil-photos h2 {
+    color: #242424;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.accueil-photos div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.accueil-introduction {
     display: flex;
     flex-direction: row;
     width: 50%;
+    align-items: center;
     margin: auto;
-    gap: 16px;
-    justify-content: center;
-    margin-bottom: 20px;
 }
 
-.galeriePhotos h2 {
-    font-size: 35px;
-    color: #1F2039;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin-bottom: 66px;
-    margin-top: 79px;
+.portfolio-section-photos {
+    background-color: white;
+}
+
+.portfolio-section-photos h2 {
+    color: #242424;
+    margin-bottom: 80px;
+}
+
+.grid-paysages img,
+.grid-portraits img {
+    width: 100%;
+    height: 100%;
+    /* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+    object-fit: cover;
 }
