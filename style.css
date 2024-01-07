@@ -45,6 +45,9 @@ footer {
     color: white;
     border-radius: 50px;
     padding: 20px 30px;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 20px 30px;
 }
 
 a:hover {
@@ -68,6 +71,11 @@ a:hover {
     border-right: 1px solid #8e86b5;
     border-bottom: 1px solid #8e86b5;
     padding: 50px;
+    margin-bottom: 80px;
+}
+
+.carre-contenu + div {
+    text-align: center;
 }
 
 .carre-contenu h2 {
@@ -121,18 +129,31 @@ nav a {
 .accueil-introduction {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    align-items: center;
+    width: 60%;
+    align-items: flex-start;
     margin: auto;
 }
 
+.accueil-introduction h1 {
+    margin-bottom: 15px;
+}
+
+.accueil-introduction p {
+    margin-bottom: 30px;
+}
+
+.accueil-introduction div {
+    padding-right: 80px;
+}
+
 .portfolio-section-photos {
+    padding-top: 0;
     background-color: white;
 }
 
 .portfolio-section-photos h2 {
     color: #242424;
-    margin-bottom: 80px;
+    padding: 40px 0;
 }
 
 .grid-paysages {
@@ -154,4 +175,26 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.lien-conteneur-photo {
+    position: relative;
+}
+
+.photo-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.lien-conteneur-photo:hover .photo-hover {
+    display: flex;
 }
